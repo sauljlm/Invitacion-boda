@@ -1,8 +1,20 @@
 const music = document.getElementById("music");
+const btn = document.querySelector(".enable-audio");
+
+btn.addEventListener("click", () => {
+    if (music.paused) {
+        console.log('play')
+        music.muted = false;
+        music.volume = 1;
+        music.play();
+        btn.classList.add("pause-button");
+    } else {
+        music.pause();
+        btn.classList.remove("pause-button");
+    }
+});
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    audio.muted = false;
-    music.loop = true;
     gsap.registerPlugin(ScrollTrigger,SplitText)
 
     const sections = document.querySelectorAll(".primary-animation");
