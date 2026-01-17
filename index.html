@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saul y Katherine</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Luxurious+Script&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+</head>
+<body>
+    <audio id="music" loop>
+        <source src="./audio/music.mp3" type="audio/mpeg" />
+        Tu navegador no soporta audio.
+    </audio>
+    <div class="wrapper">
+        <section class="banner primary-animation">
+            <article class="banner__image">
+                <div class="banner__image-text">
+                    <h1>Saúl y Katherine</h1>
+                    <h3>Nos Casamos</h3>
+                </div>
+                <img
+                    src="./images/keep-scrolling.svg"
+                    alt="Keep scrolling"
+                    class="keep-scrolling"
+                />
+            </article>
+            <article class="bienvenida">
+                <h2>¡Estás invitado!</h2>
+                <p>Nos encantaría que seas parte de este momento tan especial para nosotros. ¡Falta poco!</p>
+            </article>
+            
+        </section>
+        <section class="ceremonia primary-animation">
+            <h2>Ceremonia</h2>
+            <p>Parroquia de Curridabat San Antonio de Padua</p>
+            <div class="iglesia-foto"></div>
+            <div class="fecha-hora">
+                <p>12 Set</p>
+                <span></span>
+                <p class="hora">11:00 a.m.</p>
+            </div>
+            <a class="primary-button" href="https://maps.app.goo.gl/1Kv2d51R8yh7phL49" target="_blank">Ver ubicación</a>
+        </section>
+        <section class="recepción primary-animation">
+            <h2>Recepción</h2>
+            <p>Bocadito del cielo</p>
+            <div class="recepcion-foto"></div>
+            <div class="fecha-hora">
+                <p>12 Set</p>
+                <span></span>
+                <p class="hora">02:00 p.m.</p>
+            </div>
+            <a class="primary-button" href="https://maps.app.goo.gl/7LaHnpknZAVEQGzo8" target="_blank">Ver ubicación</a>
+        </section>
+        <section class="dress-code primary-animation">
+            <h2>Código de vestimenta</h2>
+            <div class="icon dress-code-icon"></div>
+            <p>Formal</p>
+            <p>¡Luce tu mejor look!</p>
+        </section>
+        <section class="galeria">
+            <div class="galeria-box">
+                <div class="album-row album-row-2-column">
+                    <div class="album-row__item album-item1"></div>
+                    <div class="album-row__item album-item2"></div>
+                </div>
+                <div class="album-row">
+                    <div class="album-row__item album-item3"></div>
+                </div>
+            </div>
+            <div class="galeria-box">
+                <div class="album-row album-row-2-column">
+                    <div class="album-row__item album-item4"></div>
+                    <div class="album-row__item album-item5"></div>
+                </div>
+                <div class="album-row">
+                    <div class="album-row__item album-item6"></div>
+                </div>
+            </div>
+        </section>
+        <section class="regalos primary-animation">
+            <h2>Regalos</h2>
+            <div class="icon regalos-icon"></div>
+            <p>¡Lo más importante es tu presencia!</p> 
+            <p>Pero si deseas darnos un regalo, tenemos las siguientes opciones</p>
+
+            <h3>Efectivo</h3>
+            <p>En recepción tendremos una caja con sobres.</p>
+
+            <h3>SINPE</h3>
+            <div class="informacion-sinpe">
+                <p>Saúl: 84689106</p>
+                <p>Katherine: 84345671</p>
+            </div>
+        </section>
+        <section class="regalos primary-animation">
+            <h2>Confirmar asistencia</h2>
+            <div class="icon calendario-icon"></div>
+            <p>Agradecemos que confirmes tu asistencia antes del 12 de Julio</p> 
+            <a class="primary-button" href="https://wa.me/50684345671?text=Hola,%2C%20confirmo%20mi%20asistencia%20a%20la%20boda" target="_blank">Confirmar</a>
+        </section>
+        <section class="final primary-animation">
+            <h2 >Te esperamos</h2>
+            <p>Saúl y Katherine</p>
+        </section>
+        <section class="album primary-animation">
+            
+        </section>
+        <footer class="footer">
+            <p>Desarrollado por Saúl López</p>
+        </footer>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>

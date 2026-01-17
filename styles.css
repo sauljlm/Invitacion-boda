@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 68px;
+    font-family: "Luxurious Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+h2{
+    font-size: 48px;
+    color: #ad832f;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h3 {
+    font-size: 38px;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    max-width: 100%;
+    background-color: #F6F2E3;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5vh 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper .banner {
+    padding: 0;
+}
+
+.primary-button {
+    padding: 10px 30px;
+    /* background-color: #384363; */
+    /* background-color: #1a2030; */
+    /* background-color: #ad832f; */
+    background-color: #32425e;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.banner__image {
+    position: relative;
+
+    background-image: url("./images/pedida-de-matrimonio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 60vh;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner__image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.banner__image-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    height: 12vh;
+    margin-bottom: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .banner__image {
+        background-image: url("./images/pedida-de-matrimonio-desk.jpg");
+    }
+}
+
+.bienvenida {
+    padding: 5vh 10%;
+    text-wrap: balance;
+}
+
+.iglesia-foto {
+    background-image: url("./images/iglesia.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 32vh;
+    height: 32vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-top: 20px;
+}
+
+
+.recepcion-foto {
+    background-image: url("./images/bocadito-del-cielo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 26vh;
+    height: 26vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-top: 20px;
+}
+
+.fecha-hora {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 3vh 0;
+}
+
+.fecha-hora span {
+    width: 2px;
+    background-color: black;
+    height: 50px;
+}
+
+.fecha-hora p {
+    width: 50%;
+    font-size: 32px;
+}
+
+.fecha-hora .hora {
+    text-align: end;
+}
+
+.icon {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 20vh;
+    min-height: 20vh;
+    height: 20vh;
+}
+
+.dress-code-icon {
+    background-image: url("./images/atuendo.png");
+}
+
+.regalos-icon {
+    background-image: url("./images/regalo.png");
+    margin: 2vh 0;
+}
+
+.calendario-icon {
+    background-image: url("./images/calendario.png");
+    margin: 2vh 0;
+}
+
+/* Gallery */
+.galeria {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.galeria-box {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .wrapper .galeria {
+        flex-direction: row;
+    }
+    .galeria-box {
+        width: 50%;
+    }
+}
+
+.album-row {
+    width: 100%;
+    margin: 3px 0;
+}
+
+.album-row-2-column {
+    display: flex;
+    gap: 6px;
+}
+
+.album-row .album-row__item {
+    margin: 0;
+    border-radius: 10px;
+}
+
+.album-row-2-column .album-row__item {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.album-row div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 30vh;
+    height: 30vh;
+}
+
+@media (min-width: 768px) {
+    .album-row div {
+        min-height: 60vh;
+        height: 60vh;
+    }  
+}
+
+.album-item1 {
+    background-image: url("./images/gallery/gallery1.jpg");
+}
+.album-item2 {
+    background-image: url("./images/gallery/gallery2.jpg");
+}
+.album-item3 {
+    background-image: url("./images/gallery/gallery3.jpg");
+}
+.album-item4 {
+    background-image: url("./images/gallery/gallery4.jpg");
+}
+.album-item5 {
+    background-image: url("./images/gallery/gallery5.jpg");
+}
+.album-item6 {
+    background-image: url("./images/gallery/gallery6.jpg");
+}
+/* End Gallery */
+
+.regalos .primary-button {
+    margin: 2vh 0;
+}
+
+.final h2 {
+    font-size: 62px;
+}
+
+.final p {
+    font-size: 62px;
+    font-family: "Luxurious Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Keep scrolling */
+.keep-scrolling {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+  
+    animation: bounce-pulse 2s ease-in-out infinite;
+    opacity: 0.9;
+    pointer-events: none;
+  
+    transition: opacity 0.4s ease;
+
+    z-index: 2;
+}
+
+@media (min-width: 768px) {
+    .keep-scrolling {
+        bottom: 20px;
+    }    
+}
+  
+.keep-scrolling.hidden {
+    opacity: 0;
+}
+  
+  @keyframes bounce-pulse {
+    0% {
+      transform: translateX(-50%) translateY(0) scale(0.8);
+      opacity: 0.7;
+    }
+  
+    50% {
+      transform: translateX(-50%) translateY(-6px) scale(1);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translateX(-50%) translateY(0) scale(0.8);
+      opacity: 0.7;
+    }
+  }
+  
