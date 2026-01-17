@@ -1,6 +1,7 @@
 const music = document.getElementById("music");
 
 document.addEventListener("DOMContentLoaded", (event) => {
+    audio.muted = false;
     music.play();
     music.loop = true;
     gsap.registerPlugin(ScrollTrigger,SplitText)
